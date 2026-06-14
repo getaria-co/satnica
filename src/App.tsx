@@ -5,6 +5,7 @@ import TimeEntryPage from './pages/TimeEntry';
 import Payroll from './pages/Payroll';
 import Employees from './pages/Employees';
 import Import from './pages/Import';
+import SalaryCalc from './pages/SalaryCalc';
 import { getEmployees, getEntries } from './lib/storage';
 import { t, type Lang } from './lib/i18n';
 
@@ -32,6 +33,7 @@ export default function App() {
       {tab === 'payroll' && <Payroll employees={data.employees} entries={data.entries} s={s} />}
       {tab === 'employees' && <Employees employees={data.employees} onRefresh={refresh} s={s} />}
       {tab === 'import' && <Import employees={data.employees} onRefresh={refresh} s={s} />}
+      {tab === 'calc' && <SalaryCalc s={s} />}
     </Layout>
   );
 }

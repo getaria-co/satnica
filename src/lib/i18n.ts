@@ -3,7 +3,7 @@ export type Lang = 'hr' | 'en';
 export const t = {
   hr: {
     appSub: 'Evidencija radnog vremena',
-    tabs: { dashboard: 'Dashboard', time: 'Unos vremena', payroll: 'Obračun plaće', employees: 'Zaposlenici', import: 'Uvoz' },
+    tabs: { dashboard: 'Dashboard', time: 'Unos vremena', payroll: 'Obračun plaće', employees: 'Zaposlenici', import: 'Uvoz', calc: 'Kalkulator' },
 
     dashTitle: 'Dashboard',
     statEmployees: 'Zaposlenici', statEmployeesNote: 'Aktivni',
@@ -57,10 +57,20 @@ export const t = {
     noEmployees: 'Nema zaposlenika. Dodajte prvog gore.',
     perHourLabel: 'po satu', oibLabel: 'OIB',
     deleteEmp: 'Obriši',
+
+    calcTitle: 'Kalkulator plaće', calcSub: 'Upiši bruto ili neto — vidi sve tri varijante odbitaka odjednom',
+    calcModeForward: 'Bruto → Neto', calcModeReverse: 'Neto → Bruto',
+    calcInputGross: 'Bruto plaća (€/mj)', calcInputNet: 'Željena neto isplata (€/mj)',
+    calcReverseNote: 'Kalkulator izračunava koji bruto iznos treba za željenu neto isplatu u svakoj varijanti.',
+    calcHealthNote: 'doprinos poslodavca',
+    calcEffRate: 'Efektivna stopa odbitka:',
+    calcRequiresGross: 'Potreban bruto:',
+    calcEmpty: 'Upiši iznos gore za prikaz kalkulacije.',
+    calcAllowanceNote: 'Osobni odbitak: 560 €/mj. Porez na dohodak: 20% na (bruto − MIO − odbitak).',
   },
   en: {
     appSub: 'Time & Payroll Tracking',
-    tabs: { dashboard: 'Dashboard', time: 'Time Entry', payroll: 'Payroll', employees: 'Employees', import: 'Import' },
+    tabs: { dashboard: 'Dashboard', time: 'Time Entry', payroll: 'Payroll', employees: 'Employees', import: 'Import', calc: 'Calculator' },
 
     dashTitle: 'Dashboard',
     statEmployees: 'Employees', statEmployeesNote: 'Active',
@@ -114,6 +124,16 @@ export const t = {
     noEmployees: 'No employees yet. Add the first one above.',
     perHourLabel: 'per hour', oibLabel: 'OIB',
     deleteEmp: 'Delete',
+
+    calcTitle: 'Salary Calculator', calcSub: 'Enter gross or net — see all three deduction options at once',
+    calcModeForward: 'Gross → Net', calcModeReverse: 'Net → Gross',
+    calcInputGross: 'Gross salary (€/mo)', calcInputNet: 'Desired net pay (€/mo)',
+    calcReverseNote: 'Calculator finds the gross required to reach your desired net under each deduction mode.',
+    calcHealthNote: 'employer contribution',
+    calcEffRate: 'Effective deduction rate:',
+    calcRequiresGross: 'Requires gross:',
+    calcEmpty: 'Enter an amount above to see the breakdown.',
+    calcAllowanceNote: 'Personal allowance: €560/mo. Income tax: 20% on (gross − MIO − allowance).',
   },
 } as const;
 

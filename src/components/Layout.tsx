@@ -1,4 +1,4 @@
-import { LayoutDashboard, Clock, DollarSign, Users, Upload, Sun, Moon, Globe } from 'lucide-react';
+import { LayoutDashboard, Clock, DollarSign, Users, Upload, Sun, Moon, Globe, Calculator } from 'lucide-react';
 import type { Lang, Strings } from '../lib/i18n';
 import { useIsMobile } from '../hooks/useIsMobile';
 
@@ -19,6 +19,7 @@ const TABS = [
   { id: 'payroll',   icon: DollarSign,      labelKey: 'payroll' },
   { id: 'employees', icon: Users,           labelKey: 'employees' },
   { id: 'import',    icon: Upload,          labelKey: 'import' },
+  { id: 'calc',      icon: Calculator,      labelKey: 'calc' },
 ] as const;
 
 export default function Layout({ children, activeTab, onTabChange, lang, onLangChange, theme, onThemeChange, s }: Props) {
