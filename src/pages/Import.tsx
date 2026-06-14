@@ -9,7 +9,7 @@ type MatchMap = Record<string, string>;
 
 function genId() { return Math.random().toString(36).slice(2) + Date.now().toString(36); }
 
-export default function Import({ employees, onRefresh, s }: Props) {
+export default function Import({ employees, onRefresh, s: _s }: Props) {
   const [dragging, setDragging] = useState(false);
   const [parsed, setParsed] = useState<ParsedEmployee[] | null>(null);
   const [warnings, setWarnings] = useState<string[]>([]);

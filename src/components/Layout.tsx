@@ -66,7 +66,6 @@ export default function Layout({ children, activeTab, onTabChange, lang, onLangC
                   color: isActive ? 'var(--accent)' : 'var(--text2)',
                   display: 'flex', alignItems: 'center', gap: 6,
                   borderBottom: isActive ? '2px solid var(--accent)' : '2px solid transparent',
-                  borderRadius: isActive ? '8px 8px 0 0' : 8,
                 }}>
                   <Icon size={14} strokeWidth={isActive ? 2.5 : 2} />
                   {s.tabs[tab.labelKey]}
